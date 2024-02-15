@@ -1,0 +1,109 @@
+
+/* Icon */
+
+	.iconn {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.iconn:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.iconn > .label {
+			display: none;
+		}
+
+		.iconn:before {
+			line-height: inherit;
+		}
+
+		.iconn.solid:before {
+			font-weight: 600;
+		}
+
+		.iconn.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+
+/* Labeled Icons */
+
+	ul.labeled-icons {
+		list-style: none;
+		padding: 0;
+	}
+
+		ul.labeled-icons li {
+			line-height: 1.75em;
+			margin: 1.5em 0 0 0;
+			padding-left: 2.25em;
+			position: relative;
+		}
+
+			ul.labeled-icons li:first-child {
+				margin-top: 0;
+			}
+
+			ul.labeled-icons li a {
+				color: inherit;
+			}
+
+			ul.labeled-icons li h3 {
+				color: #b2b2b2;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 1em;
+			}
+
+#five{
+	margin-left: 50px;
+	text-align: justify;
+}
+#five1{
+	text-align: center;
+}
+
+#five2{
+	text-align: center;
+}
+
+#envoi{
+	margin-top: 10px;
+}
+
+#etudes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+#etudes  > * {
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    max-width: calc(33.33% - 20px);
+    border-radius: 50%; 
+}
+
+  
+  .imcontain img {
+	max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+	max-height: 100%; /* Pour que l'image ne dépasse pas la hauteur du conteneur */
+	width: auto; /* Pour que l'image conserve ses proportions */
+	height: auto; /* Pour que l'image conserve ses proportions */
+  }
+  
+
