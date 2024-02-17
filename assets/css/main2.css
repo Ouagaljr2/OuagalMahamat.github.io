@@ -69,7 +69,8 @@
 			}
 
 #five{
-	margin-left: 50px;
+	margin-left: 30px;
+	margin-right: 30px;
 	text-align: justify;
 }
 #five1{
@@ -85,7 +86,7 @@
 }
 
 #etudes {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 30px;
@@ -98,12 +99,54 @@
     border-radius: 50%; 
 }
 
-  
-  .imcontain img {
-	max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
-	max-height: 100%; /* Pour que l'image ne dépasse pas la hauteur du conteneur */
-	width: auto; /* Pour que l'image conserve ses proportions */
-	height: auto; /* Pour que l'image conserve ses proportions */
+.unives{
+	height: auto;
+	width: 200px;
+}
+
+.imcontain{
+	display: flex;
+	justify-content: space-around;
+}
+
+.restant{
+	display: flex;
+}
+
+#Education{
+	margin-left: 200px;
+	padding-bottom: 30px;
+}
+.rower {
+	display: flex;
+	flex-wrap: wrap; /* Les éléments vont revenir à la ligne si l'espace est insuffisant */
+	justify-content: space-between; /* Les éléments seront répartis de manière égale sur la ligne */
+	margin-left: 5px;
+	margin-right: 5px;
   }
   
+  .rower article {
+	width: calc(33.33% - 10px); /* Chaque article occupera environ un tiers de l'espace disponible sur la ligne avec un espacement de 10px entre les articles */
+	margin-bottom: 20px; /* Espacement entre les lignes */
+	border: 1px solid #ccc; /* Contour de chaque article */
+	padding: 10px; /* Espace intérieur de chaque article */
+	border-radius: 8px; /* Ajouter une bordure arrondie */
+  }
+
+  /* Pour les écrans de taille inférieure (mobile) */
+@media only screen and (max-width: 768px) {
+	.rower article {
+	  width: calc(100% - 20px); /* Chaque article occupe la largeur totale avec un espacement de 20px sur les côtés */
+	}
+  }
+
+  #foot{
+	margin-top: -40px;
+  }
+
+  
+
+  
+
+
 
