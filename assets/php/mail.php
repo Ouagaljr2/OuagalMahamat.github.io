@@ -1,13 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Vérifier que tous les champs sont remplis
-    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
+    if (empty($_POST['name']) || empty($_POST['your_email']) || empty($_POST['message'])) {
         echo "Veuillez remplir tous les champs du formulaire.";
         exit;
     }
     
     // Vérifier que l'e-mail est valide
-    $email = $_POST['email'];
+    $email = $_POST['your_email'];
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "L'adresse e-mail n'est pas valide.";
         exit;
