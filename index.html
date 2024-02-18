@@ -203,16 +203,36 @@
 						</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="https://ouagaljr2.github.io/web/ouagal.mahamat@yahoo.com">
+							
+								<form id="myForm" action="https://formspree.io/f/xgegkrwr" method="POST" >
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Your name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="your_email" id="email" placeholder="Your email" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your email" /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
 									<ul class="actions" id="envoi">
-										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="submit" value="Send" /></li>
 									</ul>
-								</form>	
+								</form>
+								
+								<script>
+									document.getElementById("myForm").addEventListener("submit", function(event) {
+										var name = document.getElementById("name").value.trim();
+										var email = document.getElementById("email").value.trim();
+										var message = document.getElementById("message").value.trim();
+										var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+								
+										if (name === "" || email === "" || message === "") {
+											event.preventDefault(); // Prevent form submission if fields are empty
+											alert("Please fill out all fields.");
+										} else if (!emailPattern.test(email)) {
+											event.preventDefault(); // Prevent form submission if email is invalid
+											alert("Please enter a valid email address.");
+										}
+										
+									});
+								</script>
+							
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
