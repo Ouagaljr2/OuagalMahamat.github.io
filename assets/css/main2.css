@@ -139,10 +139,38 @@
 	}
   }
 
-  #foot{
-	margin-top: -30px;
+
+  .download-button {
+	margin-bottom: 5px;
+    display: inline-block;
+    padding: 2.5px 5px;
+    background-color: #ff4d4d; /* Rouge */
+    color: #fff; /* Texte blanc */
+    text-decoration: none;
+    border: 2px solid #ff4d4d; /* Bordure rouge */
+    border-radius: 30px; /* Coins arrondis */
+    font-size: 18px;
+    font-weight: bold;
+    transition: none;
   }
 
+  /* Hover effet */
+  .download-button:hover {
+    background-color: #eb2727; /* Fond blanc */
+  }
+
+
+
+  #tete{
+	margin-top: -25px;
+	margin-bottom: -20px;
+  }
+  .download-button{
+	margin-bottom: 10px;
+  }
+
+
+  
   
 
   
