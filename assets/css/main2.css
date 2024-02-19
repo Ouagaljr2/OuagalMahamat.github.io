@@ -120,9 +120,8 @@
 .rower {
 	display: flex;
 	flex-wrap: wrap; /* Les éléments vont revenir à la ligne si l'espace est insuffisant */
-	justify-content: space-between; /* Les éléments seront répartis de manière égale sur la ligne */
-	margin-left: 5px;
-	margin-right: 5px;
+	justify-content: space-around; /* Les éléments seront répartis de manière égale sur la ligne */
+
   }
   
   .rower article {
@@ -141,7 +140,7 @@
   }
 
   #foot{
-	margin-top: -40px;
+	margin-top: -30px;
   }
 
   
