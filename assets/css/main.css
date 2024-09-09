@@ -2804,7 +2804,7 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.60em 0;
+						padding: 0.85em 0;
 						text-decoration: none;
 					}
 
@@ -2845,7 +2845,7 @@ input, select, textarea {
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: em 0 2em 0;
+		padding: 4em 0 2em 0;
 	}
 
 		#footer .copyright {
@@ -2941,8 +2941,6 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 1024px) {
-
-		
 
 		/* Basic */
 
@@ -3113,7 +3111,6 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
-		
 
 		/* Basic */
 
